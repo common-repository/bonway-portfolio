@@ -1,0 +1,97 @@
+.bonwaybsp__container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 5px;
+}
+
+.bsp-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bsp-item__title {
+    font-size: 24px;
+    padding: 12px;
+    text-align: center;
+}
+
+.bsp-item__content {
+    padding: 12px;
+}
+
+.bsp-item__readmore {
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+
+.bsp-item__image {
+    overflow: hidden;
+    position: relative;
+    min-height: 200px;
+}
+
+.bsp-item__image,
+.bsp-item__content,
+.bsp-item__readmore {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bsp-item__image img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.quart,
+.third,
+.half,
+.twothird,
+.threequart,
+.full {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .quart,
+    .third,
+    .half,
+    .twothird {
+        width: 50%;
+    }
+
+    .threequart,
+    .full {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .quart {
+        width: 25%;
+    }
+
+    .third {
+        width: 33.333333%;
+    }
+
+    .half {
+        width: 50%;
+    }
+
+    .twothird {
+        width: 66.666666%;
+    }
+
+    .threequart {
+        width: 75%;
+    }
+    
+    .full {
+        width: 100%;
+    }
+}

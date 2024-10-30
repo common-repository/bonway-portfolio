@@ -1,0 +1,133 @@
+.hide {
+    display: none;
+}
+
+input[type='text'].readonly {
+    border: none;
+    width: 100%;
+    z-index: 50;
+}
+
+input[type='color'] {
+    margin-right: 8px;
+}
+
+.bonwaybsp-inputcontainer {
+    position: relative;
+    max-width: 320px;
+}
+
+.bonwaybsp-inputcontainer .copy-btn {
+    background-color: #ccc;
+    background-image: url(../images/copy-regular.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    content: "";
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 1px;
+    width: 25px;
+    z-index: 100;
+}
+
+.bonwaybsp-inputcontainer .copy-msg {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #ccc;
+    display: none;
+    opacity: 0;
+    padding: 3px;
+    position: absolute;
+    top: 32px;
+    z-index: 200;
+}
+
+.bonwaybsp-inputcontainer .copy-msg:before {
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: -23px;
+    z-index: 10;
+}
+
+.bonwaybsp-inputcontainer .copy-msg:after {
+    border-bottom: 13px solid #ccc;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: -25px;
+}
+
+.bsp-section__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bsp-section__container.no-space {
+    justify-content: flex-start;
+}
+
+.bsp-section__container span {
+    line-height: 27px;
+    width: 50%;
+}
+
+.bsp-section__container input:not([type='color']):not([type='checkbox']),
+.bsp-section__container select {
+    width: 50%;
+}
+
+.bsp-image__upload,
+.bsp-image__container img {
+    width: 100%;
+}
+
+.meta-box-sortables.ui-sortable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bsp-metabox {
+    width: 100%;
+}
+
+.bsp-readmore,
+.bsp-external-link {
+    margin-top: 6px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .bsp-metabox {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bsp-metabox {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    .bsp-metabox {
+        width: 24%;
+    }
+}
